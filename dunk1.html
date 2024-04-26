@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/buy.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body class="page light-theme">
+    <div class="container light-theme">
+        <a name="home"></a>
+        <header class="header light-theme themos">
+            <div id="menuToggle">
+                <!--
+                A fake / hidden checkbox is used as click reciever,
+                so you can use the :checked selector on it.
+                -->
+                <input type="checkbox" />
+                
+                <!--
+                Some spans to act as a hamburger.
+                
+                They are acting like a real hamburger,
+                not that McDonalds stuff.
+                -->
+                <span></span>
+                <span></span>
+                <span></span>
+                
+                <!--
+                Too bad the menu has to be inside of the button
+                but hey, it's pure CSS magic.
+                -->
+                <ul id="menu">
+                  <a href="#"><li>Home</li></a>
+                  <a href="#"><li>Catalog</li></a>
+                </ul>
+              </div>
+            <div class="header_block light-theme themos">
+                <div class="header_text">
+                    <a href="index.html" class="header_a1">головна сторінка</a>
+                    <a href="#section_main" class="header_a2">каталог</a>
+                </div>
+                <div class="header_logo">
+                    <a href="index.html" class="a_logo">
+                        <img src="img/planet_logoo.png" alt="" class="header_logo_img">
+                    </a>
+                </div>
+                <div class="header_text2">
+                    <a href="#more" class="header_a3">more</a>
+                </div>
+                <button class="theme-button" type="button">Змінити тему</button>
+                <div class="header_social">
+                    <a href="#" class="social">
+                        <img src="img/globe.svg" alt="" class="social_img" width="11px" height="11px" >
+                    </a>
+                    <a href="#" class="social">
+                        <img src="img/share-alt.svg" alt="" class="social_img" width="11px" height="11px">
+                    </a>
+                    <a href="#" class="social">
+                        <img src="img/shopping-cart.svg" alt="" class="social_img" width="11px" height="11px">
+                    </a>             
+                    <a href="#" class="social">
+                        <img src="img/envelope.svg" alt="" class="social_img" width="11px" height="11px">
+                    </a>
+                    <a href="#" class="social">
+                        <img src="img/user.svg" alt="" class="social_img" width="11px" height="11px">
+                    </a>    
+                </div>
+            </div>
+        </header>
+        <div class="way">
+            <p class="item-way"><a href="index.html" class="head-way">Головна сторінка</a>/ <a href="catalog.html" class="catalog">Каталог</a>/ <a href="" class="sniker">NIKE SB DUNK PURPLE PULSE</a></p>
+        </div>
+        <div class="cardo">
+        <div class="item_card">
+            <div class="title_card">
+                <h1 class="main_h1 bebra">NIKE SB DUNK PURPLE PULSE</h1>
+            </div>
+            <div class="bigos">
+                <div class="column1">
+                    <div class="product-gallery">
+                        <div class="thumbnails">
+                          <img src="https://static1.s123-cdn-static-a.com/uploads/6954727/2000_63b93cf20d745.jpg" data-image="https://static1.s123-cdn-static-a.com/uploads/6954727/2000_63b93cf20d745.jpg" class="thumbnail active">
+                          <img src="https://static1.s123-cdn-static-a.com/uploads/6954727/2000_63b93a87752c2.jpg" alt="Product Image3" data-image="https://static1.s123-cdn-static-a.com/uploads/6954727/2000_63b93a87752c2.jpg" class="thumbnail">
+                        </div>
+                        <div class="main-image">
+                          <img src="https://static1.s123-cdn-static-a.com/uploads/6954727/2000_63b93cf20d745.jpg" alt="Product Image1" class="image" data-image="img1.jpg">
+                        </div>
+                      </div>
+                </div>
+                <div class="column2">
+                    <div class="description">
+                        Брендова коробка + папір<br>
+
+                        Оригінальна Бірка<br>
+
+                        36-22.5 см<br>
+                        37-23.5 см<br>
+                        38-24 см<br>
+                        39-25 см<br>
+                        40-25.5 см<br>
+                        41-26 см<br>
+                        42-26.5 см<br>
+                        43-27.5 см<br>
+                        44-28 см<br>
+                        45-29 см<br>
+                        46-29.5 см<br>
+                    </div>
+                    <hr class="gray">
+                    <div class="price">
+                        <h1 class="cpt-price">2940₴</h1>
+                        <p class="desc">Shipping: Нова-Пошта 110.00₴  <br>
+                            Return Policy: Повернення працює лише на пошті.<br>
+                             Обов'язково при отриманні перевірте чи вам підходить<br>
+                              розмір і самі кросівки без дифектів</p>
+                    </div>
+                    <hr class="grey">
+                    <div class="slestveniy_izolyator">
+                        <h1 class="SIZO">Розмір:</h1>
+                        <div class="size-buttons">
+                            <button class="size-button" onclick="selectSize(this)">36</button>
+                            <button class="size-button" onclick="selectSize(this)">37</button>
+                            <button class="size-button" onclick="selectSize(this)">38</button>
+                            <button class="size-button" onclick="selectSize(this)">39</button>
+                            <button class="size-button" onclick="selectSize(this)">40</button>
+                            <button class="size-button" onclick="selectSize(this)">41</button>
+                            <button class="size-button" onclick="selectSize(this)">42</button>
+                            <button class="size-button" onclick="selectSize(this)">43</button>
+                          </div>
+                    </div>
+                    <hr class="greyy">
+                    <div class="end">
+                    <div class="counter">
+                        <button id="decreaseButton" class="decrement-btn">-</button>
+                        <input type="number" id="quantityInput" class="counter-value" value="1" min="1">
+                        <button id="increaseButton" class="increment-btn">+</button>
+                        <button class="bttn">ДОДАТИ У КОШИК</button>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="main_new">
+            <h1 class="main_h1">Рекомендуємі товари</h1>
+        </div>
+        <div class="main">
+            <div class="main_cont_kross">
+                <div class="main_kross new-block" data-category="nike">
+                    <a href="buy.html" class="main_kros_a_img div-1" >
+                        <img src="https://static1.s123-cdn-static-a.com/uploads/6954727/800_63e4b7dfd6d1d.jpg" alt="" class="main_img ">
+                    </a>
+                    <div class="kross_box">
+                    <a href="buy.html" class="kross_box_a">
+                        <h1 class="name_kross">Nike Dunk SB Low "Mummy"</h1>
+                    </a>
+                        <h1 class="price_kross">2840₴</h1>
+                    </div>
+                </div>
+                <div class="main_kross">
+                    <a href="dunk1.html" class="main_kros_a_img div-10  " >
+                        <img src="https://static1.s123-cdn-static-a.com/uploads/6954727/2000_641fdd00a708a.jpg" alt="" class="main_img">
+                    </a>
+                        <div class="kross_box">
+                    <a href="monkey.html">
+                        <h1 class="name_kross">A BATHING APE BAPE STA LOW</h1>
+                    </a>
+                        <h1 class="price_kross">2490₴</h1>
+                    </div>
+                </div>
+                <div class="main_kross">
+                    <a href="trainer1.html" class="main_kros_a_img div-4" >
+                        <img src="https://static1.s123-cdn-static-a.com/uploads/6954727/800_6435a386d4322.jpg" alt="" class="main_img">
+                    </a>
+                        <div class="kross_box">
+                        <a href="trainer1.html">
+                            <h1 class="name_kross">Nike Air Trainer 1 SP Travis Scott Wheat</h1>
+                        </a>
+                        <h1 class="price_kross">2980₴</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <footer class="footer">
+            <div class="footer_inst">
+                <img src="https://w7.pngwing.com/pngs/815/101/png-transparent-www-mevrouwpak-nl-advertising-graphic-design-instagram-instagram-logo-business-advertising.png" alt="" class="instagram_photo">
+            </div>
+            <div class="footer_p">
+                <a href="">Головна сторінка</a>
+                <a href="">Каталог</a>
+                <a href="">Відправлення</a>
+                <a href="">Повернення/Ттн код</a>
+                <a href="">Промо</a>
+                <a href="">Написати нам</a>
+            </div>
+            <div class="footer_copyright">
+                <p>Copyright © 2023 All reserved - Barchartt-магазин кросовок nike, jordan, adidas, bape, new-balance<br>
+                Privacy</p>
+            </div>
+        </footer>
+    </div>
+    <script>
+        var decreaseButton = document.getElementById('decreaseButton');
+        var increaseButton = document.getElementById('increaseButton');
+        var quantityInput = document.getElementById('quantityInput');
+      
+        decreaseButton.addEventListener('click', decreaseQuantity);
+        increaseButton.addEventListener('click', increaseQuantity);
+      
+        function decreaseQuantity() {
+          var currentValue = parseInt(quantityInput.value);
+          if (currentValue > 1) {
+            quantityInput.value = currentValue - 1;
+          }
+        }
+      
+        function increaseQuantity() {
+          var currentValue = parseInt(quantityInput.value);
+          quantityInput.value = currentValue + 1;
+        }
+      </script>
+    <script src="js/animation.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/choose.js"></script>
+    <script src="js/product-slider.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</body>
+</html>

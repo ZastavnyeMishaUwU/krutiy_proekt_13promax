@@ -7,6 +7,9 @@
 body{
     background: no-repeat;
 }
+.header_social, .social_img{
+    display: none;
+}
 .dark-theme .boxir{
     width: 500px;
     text-align: center;
@@ -48,21 +51,7 @@ body{
     object-fit:cover;
     margin-top: 20px;
 }
-.dark-theme .header_a1{
-    background: #ffffff;
-    border-radius: 30px;
-    padding: 10px;
-    color: black;
-    text-align: center;
-}
 .header_a1{
-    border-radius: 30px;
-    padding: 10px;
-    color: white;
-    text-align: center;
-    background: #000;
-}
-.header_a2{
     font-family: 'Rubik';
     font-style: normal;
     font-weight: 400;
@@ -72,6 +61,28 @@ body{
     padding: 10px;
     color: black;
     text-align: center;
+}
+.header_a2{
+    padding: 10px;
+    border-radius: 30px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: white;
+    background: #020202;
+}
+.dark-theme .header_a2{
+    padding: 10px;
+    border-radius: 30px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: rgb(0, 0, 0);
+    background: #ffffff;
 }
 .header_a3{
     font-family: 'Rubik';
@@ -84,7 +95,8 @@ body{
     color: black;
     text-align: center;
 }
-.header_a2:hover{
+
+.header_a1:hover{
     background: #020202;
     border-radius: 30px;
     padding: 10px;
@@ -171,7 +183,7 @@ body{
     font-size: 40px;
 }
 .main_cont_kross{
-    width: 100%;
+    width: 1170px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -317,13 +329,23 @@ section{
 .balance, .nike, .jordan, .adidas, .bape{
     margin-right: 0px;
     width: 100%;
-    height: 60%;
+    height: 80%;
     margin-bottom: 10px;
     background-position: center center;
     object-fit:cover;
     background-color: rgba(0,0,0, 0.5);
 }
-.slick-slide img{}
+.kross_boxx{
+    padding-left: 15px;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    float: left;
+    text-align: left;
+
+}
 .box_select_h1{
     font-size: 19px;
 }
@@ -721,7 +743,7 @@ button{
     background-repeat: no-repeat;
    }
 .div-11, .div-55, .div-12, .div-13{
-    width: 340px;
+    width: 100%;
     height: 200px;
     position: relative;
     display: inline-block;
@@ -856,7 +878,7 @@ button{
     background: white;
     -webkit-transition: 0.3s;
     transition: 0.3s;
-     background-image: url(https://static1.s123-cdn-static-a.com/uploads/6954727/2000_641fdd080ea34.jpg);
+    background-image: url(https://static1.s123-cdn-static-a.com/uploads/6954727/2000_641fdd080ea34.jpg);
      background-size: 324px;
      }
      .div-55:after{
@@ -1133,7 +1155,7 @@ button{
         height: 140px;
     }
     .div-10, .div-55, .div-11, .div-12, .div-13{
-        width: 250px;
+        width: 100%;
         height: 140px;
         position: relative;
         display: inline-block;
@@ -1167,7 +1189,6 @@ button{
     .box_select_h1{
         font-size: 19px;
     }
-    
     .box_select_firma{
         margin-left: 0px;
     }
@@ -1308,17 +1329,22 @@ button{
      * Make this absolute positioned
      * at the top left of the screen
      */
-    #menu{
+    #menu
+    {
       position: absolute;
       width: 300px;
       margin: -100px 0 0 -50px;
       padding: 50px;
       padding-top: 125px;
+      
       background: white;
       list-style-type: none;
       -webkit-font-smoothing: antialiased;
+      /* to stop flickering of text in safari */
+      
       transform-origin: 0% 0%;
       transform: translate(-100%, 0);
+      
       transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
     }
     
@@ -1350,15 +1376,6 @@ button{
     }
     .header_logo_img{
         width: 250px;
-    }   
-    .balance, .nike, .jordan, .adidas, .bape{
-        margin-right: 0px;
-        width: 100%;
-        height: 60%;
-        margin-bottom: 10px;
-        background-position: center center;
-        object-fit:cover;
-        background-color: rgba(0,0,0, 0.5);
     }
     .header_logo_img{
         width: 240px;
@@ -1404,7 +1421,7 @@ button{
         width: 150px;
     }
     .main_kros_a_img{
-        width: 100%;
+        width: 190px;
         height: auto;
     }
     .div-10{
@@ -1579,15 +1596,6 @@ button{
         margin-bottom: 0px;
         padding: 0;
     }
-    .balance, .nike, .jordan, .adidas, .bape{
-        margin-right: 0px;
-        width: 100%;
-        height: 40%;
-        margin-bottom: 10px;
-        background-position: center center;
-        object-fit:cover;
-        background-color: rgba(0,0,0, 0.5);
-    }
     .kross_box{ 
         height: 80px;
         margin: 0 auto;
@@ -1605,79 +1613,5 @@ button{
     .price_kross{
         font-size: 20px;
         font-weight: bold;
-    }
-    .box_select_firma{
-        height: 220px;
-    }
-}
-@media screen and (max-width: 300px) {
-    .header_logo_img{
-        width: 200px;
-    }
-    .main_cont_kross{
-        width: 100%;
-    }
-    .main_kross{
-        width: 40%;
-        height: 180px;
-    }
-    .main_kross:hover{
-        width: 40%;
-        height: 250px;
-        margin: 10px;
-        border-radius: 8px;
-        transition: box-shadow 0.4s ease-in-out;
-        box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.15);
-    }
-    .main_kros_a_img {
-        width: 100%;
-    }
-    .div-1, .div-2, .div-3, .div-4, .div-5, .div-6, .div-7, .div-8, .div-9{
-        width: 100%;
-        height: 140px;
-        background-position: center center;
-        position: relative;
-        display: inline-block;
-        vertical-align: top;
-        overflow: hidden;
-       }
-    .main_img{
-        width: 100%;
-        height: 110px;
-    }
-    .name_kross{
-        width: 150px;
-    }
-    .main_kros_a_img{
-        width: 100%;
-        height: auto;
-    }
-    .div-10{
-        margin-bottom: 0px;
-        padding: 0;
-    }
-    .kross_box{ 
-        height: 95px;
-        margin: 0 auto;
-        width: 90%;
-        padding: 0;
-        margin-left: 10px;
-    }
-    .kross_box_a{
-        width: 90%;
-    }
-    .name_kross{
-        width: 100%;
-        font-size: 15px;
-    }
-    .price_kross{
-        font-size: 20px;
-        font-weight: bold;
-    }
-    .slick-slide{
-        height: 200px;
-    }
-    .popular_kross_name{
-        font-size: 21px;
     }
 }
